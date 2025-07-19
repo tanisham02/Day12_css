@@ -1,0 +1,25 @@
+## 1. Absolute Units
+
+| Unit | Description                | Example            |
+| ---- | -------------------------- | ------------------ |
+| `px` | Pixels – most common unit  | `width: 200px;`    |
+| `in` | Inches – 1in = 96px        | `width: 2in;`      |
+| `cm` | Centimeters – 1cm ≈ 37.8px | `height: 5cm;`     |
+| `mm` | Millimeters – 10mm = 1cm   | `margin: 10mm;`    |
+| `pt` | Points – 1pt = 1/72 inch   | `font-size: 12pt;` |
+| `pc` | Picas – 1pc = 12pt         | `width: 2pc;`      |
+
+
+## 2. Relative Units
+
+| Unit   | Depends on...             | Description                            | Example                            |
+| ------ | ------------------------- | -------------------------------------- | ---------------------------------- |
+| `%`    | Parent size               | Percentage of parent                   | `width: 50%;`                      |
+| `em`   | Parent font size          | 1em = current element's font-size      | `font-size: 2em;` (2× parent size) |
+| `rem`  | Root font size (`<html>`) | 1rem = root element's font size        | `font-size: 1.5rem;`               |
+| `vw`   | Viewport width            | 1vw = 1% of viewport width             | `width: 80vw;`                     |
+| `vh`   | Viewport height           | 1vh = 1% of viewport height            | `height: 100vh;`                   |
+| `vmin` | Smaller of vw or vh       | `font-size: 5vmin;`                    |                                    |
+| `vmax` | Larger of vw or vh        | `width: 50vmax;`                       |                                    |
+| `ch`   | Width of "0" character    | `width: 60ch;` for mono-spaced control |                                    |
+| `ex`   | x-height of font          | Rarely used. `height: 3ex;`            |                                    |
