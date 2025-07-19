@@ -1,0 +1,47 @@
+ CSS Custom Property (Variable): --primary-color
+In CSS, a custom property (also called a CSS variable) is a reusable value that you define using a name that starts with --.
+
+🔹 What is --primary-color?
+It’s a user-defined variable that stores a color value.
+For example:
+:root {
+  --primary-color: #333;
+}
+
+Here, --primary-color is defined with the value #333 (dark gray).
+🔹 Why use it?
+Reuse the same value in multiple places.
+Make theme changes easier.
+Improve readability and maintainability.
+
+🔹 How to use it?
+You use the variable with var():
+h1 {
+  color: var(--primary-color);
+}
+
+🔹 Full Example:
+<style>
+  :root {
+    --primary-color: #333;
+    --background: #f5f5f5;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--primary-color);
+  }
+
+  h1 {
+    border-bottom: 2px solid var(--primary-color);
+  }
+</style>
+
+<body>
+  <h1>Hello CSS Variables</h1>
+</body>
+
+📝 Notes:
+Variables must be defined inside a selector (usually :root).
+You can override them in more specific selectors.
+They're supported in modern browsers.
